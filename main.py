@@ -31,12 +31,18 @@ if st.button("Generate Search Links"):
         linkedin_url = f"https://www.linkedin.com/search/results/people/?keywords={encoded_name} {encoded_location}"
         glassdoor_url = f"https://www.glassdoor.com/Reviews/{encoded_name}-reviews-SRCH.htm"
         twitter_url = f"https://twitter.com/search?q={encoded_name} {encoded_location}"
+        instagram_url = f"https://www.instagram.com/{encoded_name}/"
+        pinterest_url = f"https://www.pinterest.com/search/pins/?q={encoded_name} {encoded_location}"
+        tiktok_url = f"https://www.tiktok.com/search?q={encoded_name} {encoded_location}"
 
         # Display clickable links for iOS compatibility
         st.markdown(f"[Search '{name}' on Facebook]({facebook_url})")
         st.markdown(f"[Search '{name}' on LinkedIn]({linkedin_url})")
         st.markdown(f"[Search '{name}' on Glassdoor (for possible salary info)]({glassdoor_url})")
         st.markdown(f"[Search '{name}' on Twitter]({twitter_url})")
+        st.markdown(f"[Search '{name}' on Instagram]({instagram_url})")
+        st.markdown(f"[Search '{name}' on Pinterest]({pinterest_url})")
+        st.markdown(f"[Search '{name}' on TikTok]({tiktok_url})")
 
         # Message to indicate links are ready for tapping
         st.write("Tap on the links above to open each search in a new tab in your browser.")
@@ -56,9 +62,22 @@ st.markdown(f"[Open Google Translate]({translate_url})")
 # Additional Information Section
 st.subheader("Additional Information")
 st.write("""
-- **Search Tips**: Search both English and Arabic names to cover more results.
+- **Search Tips**: 
+    - Search both English and Arabic names to cover more results.
+    - Try different spellings. Names translated between Arabic and English often have various spellings. For example:
+        - **Mohammed, Muhammad, Mohamed**
+        - **Yousef, Yusuf, Youssef**
+        - **Aly, Ali**
+    - Use phonetic variations to broaden your search.
+
 - **Glassdoor for Salaries**: Glassdoor can provide insights into salaries for certain roles. To get the best results, try searching with specific job titles.
+
+- **Instagram**: Instagram usernames often use specific spellings, so try variations.
+
+- **Pinterest and TikTok**: Pinterest and TikTok can provide visual and video-based content for deeper insights.
+
 - **Twitter**: Twitter can be useful to find recent posts, opinions, or other relevant public information.
+
 - **Public Registries in Egypt**: There is limited access to public information in Egypt due to privacy laws. However, some sources might include:
   - [Egyptian Bar Association](https://www.egyls.com/): Search for legal professionals.
   - [Egyptian General Authority for Investment - Company Registry](https://www.gafi.gov.eg/English/Pages/default.aspx): For registered business entities in Egypt.
